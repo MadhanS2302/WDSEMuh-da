@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Code Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: left; /* Align text to the left for better code readability */
+        }
+        pre {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow: auto; /* Allow scrolling for long lines */
+            white-space: pre-wrap; /* Wrap long lines */
+            font-family: 'Courier New', monospace; /* Use monospace font for code */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PHOTOS GALLERY</h1>
+    <h2>Photo.html</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Flexbox Photo Gallery with Figure&lt;/title&gt;
+    &lt;link rel="stylesheet" href="photo.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Photo Gallery&lt;/h1&gt;
+    &lt;div class="gallery"&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 1"&gt;
+            &lt;figcaption&gt;Photo 1&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 2"&gt;
+            &lt;figcaption&gt;Photo 2&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 3"&gt;
+            &lt;figcaption&gt;Photo 3&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 4"&gt;
+            &lt;figcaption&gt;Photo 4&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;div class="gallery"&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 1"&gt;
+            &lt;figcaption&gt;Photo 1&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 2"&gt;
+            &lt;figcaption&gt;Photo 2&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 3"&gt;
+            &lt;figcaption&gt;Photo 3&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/car1.jpg" alt="Photo 4"&gt;
+            &lt;figcaption&gt;Photo 4&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </pre>
+    
+    <h2>photo.css</h2>
+    <pre>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+h1:hover {
+    color: #2980b9; /* Change color on hover */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.gallery figure {
+    max-width: 200px;
+    margin: 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transitions for box-shadow and background-color */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px; /* Make sure images have rounded corners */
+}
+
+figcaption {
+    padding: 5px 0;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease; /* Smooth transition for figcaption background */
+}
+
+/* Enhanced hover effect */
+.gallery figure:hover {
+    transform: scale(1.05) rotate(2deg); /* Slightly scale and rotate on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #e8f0fe; /* Light blue background on hover */
+}
+
+figcaption:hover {
+    background-color: #d0e1f9; /* Change figcaption background on hover */
+}
+    </pre>
+</body>
+
+</html>

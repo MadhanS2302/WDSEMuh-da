@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display HTML Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 10px;
+            overflow-x: auto;
+            border: 1px solid #ccc;
+            white-space: pre-wrap; /* Wraps the text within the container */
+        }
+    </style>
+</head>
+<body>
+    <h2>Alumni Registration Form HTML Code</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Alumni Registration Form&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;alum.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;form-title&quot;&gt;Alumni Registration Form&lt;/h2&gt;
+        &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
+            &lt;!-- Full Name --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;name&quot;&gt;Full Name:&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;
+            &lt;/div&gt;
+            
+            &lt;!-- Gender --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;gender&quot;&gt;Gender:&lt;/label&gt;
+                &lt;select id=&quot;gender&quot; name=&quot;gender&quot; required&gt;
+                    &lt;option value=&quot;&quot; disabled selected&gt;Select your gender&lt;/option&gt;
+                    &lt;option value=&quot;male&quot;&gt;Male&lt;/option&gt;
+                    &lt;option value=&quot;female&quot;&gt;Female&lt;/option&gt;
+                    &lt;option value=&quot;other&quot;&gt;Other&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            
+            &lt;!-- Date of Birth --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;dob&quot;&gt;Date of Birth:&lt;/label&gt;
+                &lt;input type=&quot;date&quot; id=&quot;dob&quot; name=&quot;dob&quot; required&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Email Address --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;email&quot;&gt;Email Address:&lt;/label&gt;
+                &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Phone Number --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;phone&quot;&gt;Phone Number:&lt;/label&gt;
+                &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot; required&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Year of Graduation --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;graduationYear&quot;&gt;Year of Graduation:&lt;/label&gt;
+                &lt;input type=&quot;number&quot; id=&quot;graduationYear&quot; name=&quot;graduationYear&quot; min=&quot;1900&quot; max=&quot;2099&quot; required&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Department --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;department&quot;&gt;Department:&lt;/label&gt;
+                &lt;select id=&quot;department&quot; name=&quot;department&quot; required&gt;
+                    &lt;option value=&quot;&quot; disabled selected&gt;Select your department&lt;/option&gt;
+                    &lt;option value=&quot;CS&quot;&gt;Computer Science&lt;/option&gt;
+                    &lt;option value=&quot;EE&quot;&gt;Electrical Engineering&lt;/option&gt;
+                    &lt;option value=&quot;ME&quot;&gt;Mechanical Engineering&lt;/option&gt;
+                    &lt;option value=&quot;CE&quot;&gt;Civil Engineering&lt;/option&gt;
+                    &lt;option value=&quot;BT&quot;&gt;Biotechnology&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Current Address --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;address&quot;&gt;Current Address:&lt;/label&gt;
+                &lt;textarea id=&quot;address&quot; name=&quot;address&quot; rows=&quot;4&quot; required&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Employment Status --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;employmentStatus&quot;&gt;Employment Status:&lt;/label&gt;
+                &lt;select id=&quot;employmentStatus&quot; name=&quot;employmentStatus&quot; required&gt;
+                    &lt;option value=&quot;&quot; disabled selected&gt;Select your employment status&lt;/option&gt;
+                    &lt;option value=&quot;employed&quot;&gt;Employed&lt;/option&gt;
+                    &lt;option value=&quot;selfEmployed&quot;&gt;Self-Employed&lt;/option&gt;
+                    &lt;option value=&quot;unemployed&quot;&gt;Unemployed&lt;/option&gt;
+                    &lt;option value=&quot;student&quot;&gt;Student&lt;/option&gt;
+                    &lt;option value=&quot;retired&quot;&gt;Retired&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Short Bio --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;bio&quot;&gt;Short Bio:&lt;/label&gt;
+                &lt;textarea id=&quot;bio&quot; name=&quot;bio&quot; rows=&quot;3&quot; required&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+
+            &lt;!-- LinkedIn Profile --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;linkedin&quot;&gt;LinkedIn Profile:&lt;/label&gt;
+                &lt;input type=&quot;url&quot; id=&quot;linkedin&quot; name=&quot;linkedin&quot; placeholder=&quot;https://linkedin.com/in/yourprofile&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Twitter Profile --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;twitter&quot;&gt;Twitter Profile:&lt;/label&gt;
+                &lt;input type=&quot;url&quot; id=&quot;twitter&quot; name=&quot;twitter&quot; placeholder=&quot;https://twitter.com/yourprofile&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Preferred Mode of Contact --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;contactPreference&quot;&gt;Preferred Mode of Contact:&lt;/label&gt;
+                &lt;select id=&quot;contactPreference&quot; name=&quot;contactPreference&quot; required&gt;
+                    &lt;option value=&quot;&quot; disabled selected&gt;Select your preferred contact mode&lt;/option&gt;
+                    &lt;option value=&quot;email&quot;&gt;Email&lt;/option&gt;
+                    &lt;option value=&quot;phone&quot;&gt;Phone&lt;/option&gt;
+                    &lt;option value=&quot;linkedin&quot;&gt;LinkedIn&lt;/option&gt;
+                    &lt;option value=&quot;twitter&quot;&gt;Twitter&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Submit Button --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;input type=&quot;submit&quot; value=&quot;Register&quot;&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<h2>Alum.css</h2>
+Alum.css
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title styling */
+.form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+/* Focus state for input fields */
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #007BFF;
+    outline: none;
+}
+
+/* Button styling */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1a90d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+    background-color: #eb0abe;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 24px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+    }
+}
+    </pre>
+
+</body>
+</html>

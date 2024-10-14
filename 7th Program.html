@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display HTML Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        pre {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+            white-space: pre-wrap; /* This will help with line wrapping */
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form Code</h2>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Registration Form&lt;/title&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;h2&gt;Event Registration Form&lt;/h2&gt;
+                &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
+                    &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; placeholder=&quot;Your first name..&quot; required&gt;
+
+                    &lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lastname&quot; placeholder=&quot;Your last name..&quot; required&gt;
+
+                    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+                    &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Your email..&quot; required&gt;
+
+                    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                    &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Your password..&quot; required&gt;
+
+                    &lt;input type=&quot;submit&quot; value=&quot;Register&quot;&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+        style.css
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+        .container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          width: 300px;
+        }
+
+        h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+
+        label {
+          margin-bottom: 8px;
+          font-size: 14px;
+        }
+
+        input[type=&quot;text&quot;], input[type=&quot;email&quot;], input[type=&quot;password&quot;] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        input[type=&quot;submit&quot;] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        input[type=&quot;submit&quot;]:hover {
+          background-color: #45a049;
+        }
+    </pre>
+</body>
+</html>

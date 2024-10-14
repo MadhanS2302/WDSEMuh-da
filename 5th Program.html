@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display HTML Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto; /* Allow horizontal scrolling */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Frameset</h1>
+
+    <h2>index.html</h2>
+    <pre>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;KG Hospital Info&lt;/title&gt;
+&lt;/head&gt;
+&lt;!-- Define the frameset with three rows: top, left, and main --&gt;
+&lt;frameset rows="100px, *" border="0"&gt;
+    &lt;!-- Top Frame: Header --&gt;
+    &lt;frame src="header.html" name="topFrame" noresize scrolling="no"&gt;
+    
+    &lt;!-- Define the nested frameset for left and main --&gt;
+    &lt;frameset cols="200px, *" border="0"&gt;
+        &lt;!-- Left Frame: Navigation --&gt;
+        &lt;frame src="navigation.html" name="leftFrame" noresize scrolling="no"&gt;
+        
+        &lt;!-- Main Frame: Content --&gt;
+        &lt;frame src="home.html" name="mainFrame" noresize&gt;
+    &lt;/frameset&gt;
+&lt;/frameset&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>about.html</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;About Us&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;p&gt;KG Hospital was established in 1990 with the mission to provide high-quality healthcare services. 
+Our team of experienced doctors and staff are dedicated to the well-being of our patients.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>header.html</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;KG Hospital Header&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to KG Hospital&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>home.html</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+    &lt;style&gt;
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;Welcome to KG Hospital&lt;/h2&gt;
+    &lt;p&gt;
+      KG Hospital is committed to providing the best medical care with a
+      compassionate touch. We offer a wide range of medical services to meet the
+      needs of our patients.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>navigation.html</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Navigation Menu&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }   
+        a {
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+        }
+        a:hover {
+            color: #4CAF50;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Links to different sections of the hospital information --&gt;
+    &lt;a href="home.html" target="mainFrame"&gt;Home&lt;/a&gt;
+    &lt;a href="about.html" target="mainFrame"&gt;About Us&lt;/a&gt;
+    &lt;a href="services.html" target="mainFrame"&gt;Services&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>services.html</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Services&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Our Services&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;24/7 Emergency Care&lt;/li&gt;
+        &lt;li&gt;Outpatient Services&lt;/li&gt;
+        &lt;li&gt;Inpatient Services&lt;/li&gt;
+        &lt;li&gt;Diagnostic Imaging&lt;/li&gt;
+        &lt;li&gt;Pharmacy&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display XML and XSL Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        pre {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+            white-space: pre-wrap; /* This will help with line wrapping */
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Customer XML Code</h2>
+    <pre>
+        &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;customer.xsl&quot;?&gt;
+        &lt;Customers&gt;
+            &lt;Customer&gt;
+                &lt;Name&gt;MADHAN&lt;/Name&gt;
+                &lt;Email&gt;MADHAN@example.com&lt;/Email&gt;
+                &lt;Phone&gt;123-456-7890&lt;/Phone&gt;
+                &lt;Address&gt;Coimbatore, tamilnadu&lt;/Address&gt;
+            &lt;/Customer&gt;
+            &lt;Customer&gt;
+                &lt;Name&gt;MADHAN&lt;/Name&gt;
+                &lt;Email&gt;hjshnsk&lt;/Email&gt;
+                &lt;Phone&gt;987-654-3210&lt;/Phone&gt;
+                &lt;Address&gt;Chennai,tamilnadu&lt;/Address&gt;
+            &lt;/Customer&gt;
+            &lt;Customer&gt;
+                &lt;Name&gt;MADHAN&lt;/Name&gt;
+                &lt;Email&gt;bjbjxs&lt;/Email&gt;
+                &lt;Phone&gt;987-654-3210&lt;/Phone&gt;
+                &lt;Address&gt;Coimbatore&lt;/Address&gt;
+            &lt;/Customer&gt;
+            &lt;Customer&gt;
+                &lt;Name&gt;MADHAN&lt;/Name&gt;
+                &lt;Email&gt;djshdjhdh&lt;/Email&gt;
+                &lt;Phone&gt;987-654-3210&lt;/Phone&gt;
+                &lt;Address&gt;Kochi, Kerala&lt;/Address&gt;
+            &lt;/Customer&gt;
+            &lt;Customer&gt;
+                &lt;Name&gt;Rithick&lt;/Name&gt;
+                &lt;Email&gt;Rithick.doe@example.com&lt;/Email&gt;
+                &lt;Phone&gt;987-654-3210&lt;/Phone&gt;
+                &lt;Address&gt;Abu Dhabi , UAE&lt;/Address&gt;
+            &lt;/Customer&gt;
+        &lt;/Customers&gt;
+    </pre>
+
+    <h2>Customer XSL Code</h2>
+    <pre>
+        &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        &lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+            &lt;xsl:template match=&quot;/&quot;&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Customer Details&lt;/title&gt;
+                        &lt;style&gt;
+                            .table {
+                                width: 50%;
+                                border-collapse: collapse;
+                                margin: 20px auto;
+                            }
+                            .table th, .table td {
+                                border: 1px solid #ddd;
+                                padding: 8px;
+                                text-align: left;
+                            }
+                            .table th {
+                                background-color: #f2f2f2;
+                            }
+                            .header {
+                                text-align: center;
+                                font-size: 24px;
+                                margin-bottom: 20px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h2 class=&quot;header&quot;&gt;Customer Details&lt;/h2&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                            &lt;thead&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Name&lt;/th&gt;
+                                    &lt;th&gt;Email&lt;/th&gt;
+                                    &lt;th&gt;Phone&lt;/th&gt;
+                                    &lt;th&gt;Address&lt;/th&gt;
+                                &lt;/tr&gt;
+                            &lt;/thead&gt;
+                            &lt;tbody&gt;
+                                &lt;xsl:for-each select=&quot;Customers/Customer&quot;&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;xsl:value-of select=&quot;Name&quot;/&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;xsl:value-of select=&quot;Email&quot;/&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;xsl:value-of select=&quot;Phone&quot;/&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;xsl:value-of select=&quot;Address&quot;/&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/xsl:for-each&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            &lt;/xsl:template&gt;
+        &lt;/xsl:stylesheet&gt;
+    </pre>
+</body>
+</html>
